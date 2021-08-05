@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="estilopro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Poppins:wght@200;300;400&family=Roboto:wght@100;300;500&family=Style+Script&display=swap" 
+rel="stylesheet">
+    <title>Ana Claudia</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Imagens/logoAf.jpg" alt="Logo Ana Claudia">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/AninhaFarias">GitHub</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:aninhadias22@hotmail.com">Email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+5515981136054">Whatsapp</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Ana Farias</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Olá, em primeiro lugar, amo a Deus e tudo o que Ele semeia. <br>
+                    Minha família, meus cachorros e gatos são minha vida. <br>
+                    Sou uma eterna apaixonada por Dom Casmurro, Harry Potter e Jogos Vorazes. <br>
+                    E adoro ir ao cinema, assistir futebol e aprender cada dia mais. <br>
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

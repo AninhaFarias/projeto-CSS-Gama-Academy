@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(211, 199, 31);
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body{
+    /* height: 100vh; MANEIRA DE FAZER FUNCIONAR COM A FUNÇÃO TO TOP*/
+
+    /* background-image: url(./Imagens/pexels-janez-podnar-1424246.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+
+    /* background-color: #ccc;  COR INTEIRO*/
+
+    /* background: linear-gradient(90deg,#ed213a, #333333); COR GRADIENTE*/
+
+    background:  url(./Imagens/pexels-stein-egil-liland-7410347.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid rgb(180, 7, 7); */
+    /* border-bottom: 15px ridge #fff; */
+    box-shadow: 1px 1px 10px 1px #fff ;
+    margin-bottom: 50px;
+    
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+    /* border-bottom: 1px dashed #fff; */
+}
+
+header ul li a{
+    transition: 300ms;
+}
+
+header ul li a:hover{
+    color: #c0a717;
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 60px;
+}
+
+.container .name h5{
+    font-size: 20px;
+}
+
+#arrow{
+    font-size: 40px;
+    cursor: pointer;
+    animation: blink 2s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double #fff; */
+    margin-top: 40px;
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c0a717 50%, rgb(211, 199, 31) 50%) ;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover{
+    background-position:left bottom ;
+
+}
+
+/* Responsivo utilizado para tamanho de ipad */
+@media only screen and (max-width: 800px){
+    .form {
+        width: 100%;
+    }
+}
+
+
+/* Responsivo utilizado para tamanho de celular */
+@media only screen and ( max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px
+    }
+
+    .container .name h5 {
+        font-size: 15px
+    }
+
+    /* é melhor colocar em porcentagem, para que o texto tenha respiro na tela */
+    #about p{
+        max-width: 80%;  
+        text-align: justify;
+    }
+    
+}
+
